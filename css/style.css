@@ -7,17 +7,42 @@
   font-weight: bold;
 }
 
+.secundario {
+  background: #2afadf;
+}
+
+.btn-color {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #1d6fa3 0%, #26d0ce 51%, #1d6fa3 100%);
+}
+
+.btn-color:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .card__img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #ffc107;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #2afadf;
 }
 
 body {
   padding: 15px;
-  background: #8cb9bd;
+  background: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
   box-sizing: border-box;
 }
 
@@ -25,7 +50,7 @@ ul li {
   transition: 0.3s;
 }
 ul li:hover {
-  color: #ffc107;
+  color: #26d0ce;
   transform: scale(1.2);
 }
 
@@ -37,8 +62,12 @@ ul li:hover {
   outline: none;
   border: none;
   background: #fefbf6;
-  border-bottom: 2px solid #ffc107;
-  border-left: 2px solid #ffc107;
+  border-bottom: 3px solid #2afadf;
+  border-left: 3px solid #2afadf;
+}
+.form-input input::-moz-placeholder {
+  color: #494949;
+  font-size: 20px;
 }
 .form-input input::placeholder {
   color: #494949;
@@ -62,7 +91,7 @@ footer {
 }
 
 .iconos {
-  color: #ffc107;
+  color: #2afadf;
   text-align: center;
   font-size: 40px;
   display: inline-block;
@@ -79,6 +108,10 @@ footer {
 a {
   color: black;
   text-decoration: none;
+}
+
+.enlace-little {
+  color: white;
 }
 
 .card-roma {
@@ -138,6 +171,4 @@ a {
     justify-content: space-around;
     flex-direction: column;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
