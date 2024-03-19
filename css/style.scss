@@ -3,6 +3,8 @@
 $color-primario: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
 
 $color-secundario: #2afadf;
+$color-terciario: #ffa500;
+
 $width-total: 100%;
 $radius: 50%;
 
@@ -47,6 +49,9 @@ $radius: 50%;
     #1d6fa3 100%
   );
 }
+// .animacion {
+//   animation: repite 2s infinite;
+// }
 .btn-color:hover {
   background-position: right center;
   color: #fff;
@@ -58,6 +63,9 @@ $radius: 50%;
   border-radius: $radius;
   object-fit: cover;
   border: 5px solid $color-secundario;
+}
+.color-naranja {
+  background: $color-terciario;
 }
 body {
   padding: 15px;
@@ -111,7 +119,7 @@ footer {
   border-radius: 25px;
 }
 .iconos {
-  color: $color-secundario;
+  color: $color-terciario;
   text-align: center;
   font-size: 40px;
   display: inline-block;
