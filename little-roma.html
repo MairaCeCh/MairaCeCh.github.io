@@ -32,9 +32,9 @@
     <link rel="icon" href="./img/ico.ico" type="image/x-icon" />
   </head>
   <body class="conteiner">
-    <header class="d-flex flex-column rounded bg-light">
+    <header class="d-flex flex-column rounded-end-pill bg-light">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-end">
+        <div class="container-fluid justify-content-start">
           <div class="row">
             <h1 class="col-12 fw-bold display-3">Hoostedate</h1>
             <h2 class="col-12 display-5">El hostel que buscas esta aqui</h2>
@@ -55,81 +55,108 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <p>
-                <button
-                  class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseWidthExample"
-                  aria-expanded="false"
-                  aria-controls="collapseWidthExample"
-                >
-                  idioma
-                </button>
-              </p>
-              <div style="min-height: 120px">
-                <div
-                  class="collapse collapse-horizontal"
-                  id="collapseWidthExample"
-                >
-                  <div class="card card-body" style="width: 300px">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Español
-                      </label>
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Button trigger modal -->
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Idioma
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content color-modal">
+                    <div class="modal-header">
+                      <h3
+                        class="modal-title display-3 fw-bold"
+                        id="exampleModalLabel"
+                      >
+                        Elegí tu idioma
+                      </h3>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Ingles
-                      </label>
+                    <div class="modal-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Español
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Ingles
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Italiano
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Portugues
+                        </label>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Italiano
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Portugues
-                      </label>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-modal"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Button trigger modal -->
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center cursor"
+
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center cursor no-btn"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
               >
                 <!-- Launch static backdrop modal -->
                 Ayuda
-              </li>
+              </button>
 
               <!-- Modal -->
               <div
@@ -142,11 +169,14 @@
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
-                  <div class="modal-content">
+                  <div class="modal-content color-modal">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                        ¡Quienes somos?
-                      </h1>
+                      <h3
+                        class="modal-title display-3 fw-bold"
+                        id="staticBackdropLabel"
+                      >
+                        ¿Quienes somos?
+                      </h3>
                       <button
                         type="button"
                         class="btn-close"
@@ -180,7 +210,7 @@
                     <div class="modal-footer">
                       <button
                         type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-modal"
                         data-bs-dismiss="modal"
                       >
                         Cerrar
@@ -190,15 +220,11 @@
                 </div>
               </div>
 
-              <!-- <li
-                
-                Contacto
-              </li> -->
               <!-- Button trigger modal -->
               <button
                 class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal2"
               >
                 Contacto
               </button>
@@ -206,17 +232,20 @@
               <!-- Modal -->
               <div
                 class="modal fade"
-                id="exampleModal"
+                id="exampleModal2"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
-                  <div class="modal-content">
+                  <div class="modal-content color-modal">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <h3
+                        class="modal-title display-3 fw-bold"
+                        id="exampleModalLabel"
+                      >
                         Seguinos en las redes
-                      </h1>
+                      </h3>
                       <button
                         type="button"
                         class="btn-close"
@@ -232,7 +261,7 @@
                     <div class="modal-footer">
                       <button
                         type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-modal"
                         data-bs-dismiss="modal"
                       >
                         Cerrar
@@ -241,7 +270,7 @@
                   </div>
                 </div>
               </div>
-            </ul>
+            </div>
           </div>
         </div>
       </nav>

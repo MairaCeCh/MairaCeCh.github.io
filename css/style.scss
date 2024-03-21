@@ -78,15 +78,7 @@ body {
   background: $color-primario;
   box-sizing: border-box;
 }
-// ul {
-//   li {
-//     transition: 0.3s;
-//   }
-//   li:hover {
-//     color: #26d0ce;
-//     transform: scale(1.2);
-//   }
-// }
+
 .no-btn {
   border: none;
   background: none;
@@ -123,6 +115,13 @@ body {
   img {
     width: $width-total;
     height: 100%;
+  }
+}
+.color-modal {
+  background: $color-primario;
+  .btn-modal {
+    background: $color-terciario;
+    color: #fff;
   }
 }
 

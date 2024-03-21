@@ -97,6 +97,14 @@ body {
   height: 100%;
 }
 
+.color-modal {
+  background: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
+}
+.color-modal .btn-modal {
+  background: #ffa500;
+  color: #fff;
+}
+
 footer {
   margin-top: 15px;
   background: #fefbf6;
