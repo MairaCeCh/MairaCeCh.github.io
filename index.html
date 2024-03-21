@@ -34,9 +34,9 @@
     <link rel="icon" href="./img/ico.ico" type="image/x-icon" />
   </head>
   <body class="conteiner">
-    <header class="d-flex flex-column rounded bg-light">
+    <header class="d-flex flex-column rounded-end-pill bg-light">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-end">
+        <div class="container-fluid justify-content-start">
           <div class="row">
             <h1 class="col-12 fw-bold display-3">Hoostedate</h1>
             <h2 class="col-12 display-5">El hostel que buscas esta aqui</h2>
@@ -57,29 +57,213 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
-              >
-                Iniciar secion
-              </li>
-
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Button trigger modal -->
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 Idioma
-              </li>
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
               >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Elegí tu idioma
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Español
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Ingles
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Italiano
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Portugues
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center cursor no-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <!-- Launch static backdrop modal -->
                 Ayuda
-              </li>
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        ¡Quienes somos?
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur minima corporis nesciunt? Rem, maxime corrupti
+                      magnam atque blanditiis iste repudiandae ad asperiores
+                      ullam, repellat veritatis. Veritatis sint laudantium
+                      aperiam optio. Corporis dignissimos dolorem temporibus et
+                      autem itaque in perferendis error quibusdam fugiat? At non
+                      molestiae fugiat fuga minus delectus commodi in modi
+                      facere dolorem, rerum ullam ab, ad labore doloribus. Eos
+                      exercitationem error et quam accusantium praesentium,
+                      provident modi reprehenderit vel magni aliquam neque
+                      inventore amet ipsa optio fuga atque iure voluptas iste
+                      cumque cupiditate quisquam asperiores aliquid. Ut,
+                      similique. Expedita, repellendus tenetur laborum eveniet
+                      neque, ut, labore qui eos nisi quos magnam. Qui, officia
+                      tempore asperiores fuga blanditiis ab eligendi non
+                      aliquid, sit natus perferendis quisquam nulla ipsum
+                      recusandae! Inventore distinctio nisi eligendi laboriosam
+                      beatae minima sit reiciendis, eveniet quasi earum modi
+                      voluptas, obcaecati, nihil dolores deserunt. Omnis
+                      distinctio deserunt earum inventore libero deleniti labore
+                      blanditiis tenetur. Aliquid, illo.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button trigger modal -->
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
               >
                 Contacto
-              </li>
-            </ul>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Seguinos en las redes
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Email: Hoostedate@outllok.com</p>
+                      <p>Telefono: 0800-111-4698</p>
+                      <p>WhatsApp: 1151892328</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -114,7 +298,7 @@
       <!-- ///carrousel//// -->
       <div
         id="carouselExampleIndicators"
-        class="carousel slide mx-0 my-4 my-md-0"
+        class="carousel slide mx-0 my-4 my-md-0 carrousel"
       >
         <div class="carousel-indicators">
           <button
@@ -142,21 +326,21 @@
           <div class="carousel-item active">
             <img
               src="./img/grecia.jpg"
-              class="d-block p-3 bg-light rounded mx-auto col-12 col-md-10"
+              class="d-block p-3 bg-light rounded mx-auto col-10 col-md-8"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./img/grecia.jpg"
-              class="d-block p-3 bg-light rounded mx-auto col-12 col-md-10"
+              src="./img/little-roma.jpg"
+              class="d-block p-3 bg-light rounded mx-auto col-10 col-md-8"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./img/grecia.jpg"
-              class="d-block p-3 bg-light rounded mx-auto col-12 col-md-10"
+              src="./img/ditrevi.jpg"
+              class="d-block p-3 bg-light rounded mx-auto col-10 col-md-8"
               alt="..."
             />
           </div>
@@ -220,7 +404,63 @@
       </div>
 
       <hr />
-      <div class="images bg-light p-2 rounded row">
+      <!-- ////row nuevo -->
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <div class="row bg-light p-3 rounded mx-0">
+            <div
+              class="col-12 col-md-8 order-md-2 d-flex flex-column align-items-center justify-content-center"
+            >
+              <p class="fs-2 px-md-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Excepturi numquam odit, nesciunt illum sequi non quia cum.
+                Tempora, itaque eveniet!
+              </p>
+              <a href="./roma.html" class="btn btn-lg btn-color"
+                >Vamos a roma</a
+              >
+            </div>
+            <div class="col-12 col-md-4 order-md-1 images">
+              <img class="rounded" src="./img/roma.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card align-items-center py-3">
+            <img
+              src="./img/persona.jpg"
+              class="card-img-top card__img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text fs-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card align-items-center py-3">
+            <img
+              src="./img/persona.jpg"
+              class="card-img-top card__img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text fs-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ////row viejo -->
+      <!-- <div class="images bg-light p-2 rounded row">
         <div
           class="col-12 col-md-8 order-md-2 d-flex flex-column align-items-center justify-content-center"
         >
@@ -233,7 +473,7 @@
         </div>
         <div class="col-12 col-md-4 order-md-1">
           <img class="rounded" src="./img/roma.jpg" alt="" />
-        </div>
+        </div> 
       </div>
       <div class="row mx-0 my-4">
         <div class="col-md-6">
@@ -268,9 +508,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
     </section>
-    <footer>
+    <footer class="rounded-pill">
       <i class="iconos fa-brands fa-facebook"></i>
       <i class="iconos fa-brands fa-instagram"></i>
       <i class="iconos fa-brands fa-x-twitter"></i>

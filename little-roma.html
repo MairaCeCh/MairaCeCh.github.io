@@ -56,27 +56,191 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <p>
+                <button
+                  class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample"
+                >
+                  idioma
+                </button>
+              </p>
+              <div style="min-height: 120px">
+                <div
+                  class="collapse collapse-horizontal"
+                  id="collapseWidthExample"
+                >
+                  <div class="card card-body" style="width: 300px">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Español
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Ingles
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Italiano
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Portugues
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Button trigger modal -->
               <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center cursor"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
               >
-                Iniciar secion
-              </li>
-
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
-              >
-                Idioma
-              </li>
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
-              >
+                <!-- Launch static backdrop modal -->
                 Ayuda
               </li>
-              <li
-                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center"
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        ¡Quienes somos?
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur minima corporis nesciunt? Rem, maxime corrupti
+                      magnam atque blanditiis iste repudiandae ad asperiores
+                      ullam, repellat veritatis. Veritatis sint laudantium
+                      aperiam optio. Corporis dignissimos dolorem temporibus et
+                      autem itaque in perferendis error quibusdam fugiat? At non
+                      molestiae fugiat fuga minus delectus commodi in modi
+                      facere dolorem, rerum ullam ab, ad labore doloribus. Eos
+                      exercitationem error et quam accusantium praesentium,
+                      provident modi reprehenderit vel magni aliquam neque
+                      inventore amet ipsa optio fuga atque iure voluptas iste
+                      cumque cupiditate quisquam asperiores aliquid. Ut,
+                      similique. Expedita, repellendus tenetur laborum eveniet
+                      neque, ut, labore qui eos nisi quos magnam. Qui, officia
+                      tempore asperiores fuga blanditiis ab eligendi non
+                      aliquid, sit natus perferendis quisquam nulla ipsum
+                      recusandae! Inventore distinctio nisi eligendi laboriosam
+                      beatae minima sit reiciendis, eveniet quasi earum modi
+                      voluptas, obcaecati, nihil dolores deserunt. Omnis
+                      distinctio deserunt earum inventore libero deleniti labore
+                      blanditiis tenetur. Aliquid, illo.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <li
+                
+                Contacto
+              </li> -->
+              <!-- Button trigger modal -->
+              <button
+                class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 Contacto
-              </li>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Seguinos en las redes
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Email: Hoostedate@outllok.com</p>
+                      <p>Telefono: 0800-111-4698</p>
+                      <p>WhatsApp: 1151892328</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>

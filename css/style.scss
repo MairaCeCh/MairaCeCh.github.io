@@ -30,6 +30,14 @@ $radius: 50%;
 .secundario {
   background: $color-secundario;
 }
+
+.carrousel {
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}
 .btn-color {
   margin: 10px;
   padding: 15px 45px;
@@ -49,9 +57,7 @@ $radius: 50%;
     #1d6fa3 100%
   );
 }
-// .animacion {
-//   animation: repite 2s infinite;
-// }
+
 .btn-color:hover {
   background-position: right center;
   color: #fff;
@@ -72,14 +78,26 @@ body {
   background: $color-primario;
   box-sizing: border-box;
 }
-ul {
-  li {
-    transition: 0.3s;
-  }
-  li:hover {
-    color: #26d0ce;
-    transform: scale(1.2);
-  }
+// ul {
+//   li {
+//     transition: 0.3s;
+//   }
+//   li:hover {
+//     color: #26d0ce;
+//     transform: scale(1.2);
+//   }
+// }
+.no-btn {
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+.no-btn:hover {
+  color: #26d0ce;
+  transform: scale(1.2);
+}
+.cursor {
+  cursor: pointer;
 }
 
 .form-input {
@@ -116,7 +134,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-radius: 25px;
 }
 .iconos {
   color: $color-terciario;
