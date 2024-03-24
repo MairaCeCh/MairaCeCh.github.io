@@ -211,7 +211,7 @@ a {
     align-items: stretch;
     justify-content: space-around;
     flex-direction: column;
-    width: 350px;
+    width: 320px;
   }
   .card-roma img {
     border-top-right-radius: 5px;
