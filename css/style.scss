@@ -3,7 +3,7 @@
 $color-primario: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
 
 $color-secundario: #2afadf;
-$color-terciario: #ffa500;
+$color-terciario: #f7eedd;
 
 $width-total: 100%;
 $radius: 50%;
@@ -33,7 +33,7 @@ $radius: 50%;
 
 .carrousel {
   img {
-    width: 50%;
+    width: 70%;
     height: 50%;
     object-fit: cover;
   }
@@ -100,14 +100,14 @@ body {
     border-radius: 5px;
     outline: none;
     border: none;
-    background: #fefbf6;
+    background: $color-terciario;
     border-bottom: 3px solid $color-secundario;
     border-left: 3px solid $color-secundario;
   }
 
   input::placeholder {
-    color: #494949;
     font-size: 20px;
+    color: black;
   }
 }
 
@@ -121,21 +121,20 @@ body {
   background: $color-primario;
   .btn-modal {
     background: $color-terciario;
-    color: #fff;
   }
 }
 
 footer {
   margin-top: 15px;
-  background: #fefbf6;
   width: $width-total;
+
   height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .iconos {
-  color: $color-terciario;
+  color: $color-secundario;
   text-align: center;
   font-size: 40px;
   display: inline-block;
@@ -144,11 +143,14 @@ footer {
 /* ///////////////////////// roma ////////////////// */
 
 .card-roma-img {
+  width: 250px;
+  height: 150px;
   img {
     width: $width-total;
-    height: 160px;
+    height: 100%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    object-fit: cover;
   }
 }
 
@@ -162,14 +164,14 @@ a {
   @include flex;
   background-size: cover;
   margin: 0;
-
-  .alquilar {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  a {
-    @include enlace;
-  }
+}
+.alquilar {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: green;
+}
+.no-disponible {
+  background: gainsboro;
 }
 .volver {
   padding: 10px 10px;
@@ -184,7 +186,11 @@ a {
   right: 10px;
   bottom: 100px;
 }
-
+.img-little {
+  border-radius: 0 80px 80px 50px;
+  height: 40px;
+  width: 100px;
+}
 .home {
   @extend .volver;
   margin-bottom: 5px;
@@ -210,5 +216,27 @@ a {
   .card-roma {
     @include flex;
     flex-direction: column;
+    width: 350px;
+    img {
+      border-top-right-radius: 5px;
+
+      border-bottom-left-radius: 0;
+    }
+
+    .card-roma-img {
+      width: 350px;
+      height: 150px;
+    }
+    .alquilar {
+      height: 60px;
+      border-top-right-radius: 0;
+
+      border-bottom-left-radius: 5px;
+    }
+  }
+
+  .img-little {
+    width: $width-total;
+    border-radius: 0;
   }
 }
