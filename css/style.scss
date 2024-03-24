@@ -26,7 +26,11 @@ $radius: 50%;
   font-family: "Ysabeau", sans-serif;
   font-weight: bold;
 }
-
+body {
+  padding: 15px;
+  background: $color-primario;
+  box-sizing: border-box;
+}
 .secundario {
   background: $color-secundario;
 }
@@ -46,7 +50,6 @@ $radius: 50%;
   transition: 0.5s;
   background-size: 200% auto;
   color: #fff;
-  box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   border: 1px solid black;
 
@@ -62,6 +65,7 @@ $radius: 50%;
   background-position: right center;
   color: #fff;
   text-decoration: none;
+  border: 1px solid black;
 }
 .card__img {
   width: 250px;
@@ -73,12 +77,10 @@ $radius: 50%;
 .color-naranja {
   background: $color-terciario;
 }
-body {
-  padding: 15px;
-  background: $color-primario;
-  box-sizing: border-box;
-}
 
+.felecidades {
+  background: $color-terciario;
+}
 .no-btn {
   border: none;
   background: none;
