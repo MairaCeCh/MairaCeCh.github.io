@@ -10,7 +10,17 @@
 body {
   padding: 15px;
   background: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
+  border: 1px solid white;
   box-sizing: border-box;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent; /* Color de fondo */
+  border-radius: 10px; /* Redondea los bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  padding: 10px; /* Espaciado interno */
 }
 
 .secundario {
@@ -211,7 +221,7 @@ a {
     align-items: stretch;
     justify-content: space-around;
     flex-direction: column;
-    width: 320px;
+    width: 200px;
   }
   .card-roma img {
     border-top-right-radius: 5px;
