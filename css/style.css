@@ -13,14 +13,13 @@ body {
   border: 1px solid white;
   box-sizing: border-box;
 }
-
-.section {
+body .section {
   width: 80%;
   margin: 0 auto;
-  background-color: transparent; /* Color de fondo */
-  border-radius: 10px; /* Redondea los bordes */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-  padding: 10px; /* Espaciado interno */
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 .secundario {
@@ -134,7 +133,6 @@ footer {
   display: inline-block;
 }
 
-/* ///////////////////////// roma ////////////////// */
 .card-roma-img {
   width: 250px;
   height: 150px;
@@ -158,11 +156,11 @@ a {
 }
 
 .card-roma {
-  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
+  width: 95%;
   background-size: cover;
   margin: 0;
 }
@@ -229,7 +227,7 @@ a {
     border-bottom-left-radius: 0;
   }
   .card-roma .card-roma-img {
-    width: 330px;
+    width: 200px;
     height: 150px;
   }
   .card-roma .alquilar {
