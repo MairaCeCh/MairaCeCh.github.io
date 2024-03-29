@@ -158,6 +158,7 @@ a {
 }
 
 .card-roma {
+  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: stretch;

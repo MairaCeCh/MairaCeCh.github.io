@@ -172,6 +172,7 @@ a {
   color: white;
 }
 .card-roma {
+  width: 95%;
   @include flex;
   background-size: cover;
   margin: 0;
