@@ -4,6 +4,7 @@ $color-primario: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
 
 $color-secundario: #2afadf;
 $color-terciario: #f7eedd;
+$color-transparent: rgba(255, 255, 255, 0.3);
 
 $width-total: 100%;
 $radius: 50%;
@@ -34,9 +35,8 @@ body {
   .section {
     width: 80%;
     margin: 0 auto;
-    background-color: transparent;
+    background-color: $color-transparent;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
   }
 }
@@ -61,7 +61,6 @@ body {
   background-size: 200% auto;
   color: #fff;
   border-radius: 10px;
-  border: 1px solid black;
 
   background-image: linear-gradient(
     to right,
@@ -75,7 +74,6 @@ body {
   background-position: right center;
   color: #fff;
   text-decoration: none;
-  border: 1px solid black;
 }
 .card__img {
   width: 250px;
@@ -127,16 +125,29 @@ body {
   img {
     width: $width-total;
     height: 100%;
+    object-fit: cover;
   }
 }
 .color-modal {
-  background: $color-primario;
+  background: $color-terciario;
   .btn-modal {
-    background: $color-terciario;
+    background: $color-secundario;
+    color: black;
   }
 }
-
+.form-datos {
+  input {
+    background: $color-terciario;
+    font-weight: bold;
+  }
+  input:focus {
+    background: $color-terciario;
+    border: none;
+    color: black;
+  }
+}
 footer {
+  background: $color-transparent;
   margin-top: 15px;
   width: $width-total;
   height: 85px;
@@ -145,7 +156,7 @@ footer {
   justify-content: space-around;
 }
 .iconos {
-  color: $color-secundario;
+  color: white;
   text-align: center;
   font-size: 40px;
   display: inline-block;
@@ -197,9 +208,10 @@ a {
   bottom: 100px;
 }
 .img-little {
-  border-radius: 0 80px 80px 50px;
-  height: 40px;
-  width: 100px;
+  border-radius: 0 80px 80px 0;
+  max-height: 150px;
+  object-fit: cover;
+  width: 100%;
 }
 .home {
   @extend .volver;
@@ -207,9 +219,12 @@ a {
   right: 10px;
   bottom: 150px;
 }
-
+.badge {
+  background: $color-transparent;
+  color: black;
+}
 /* /////////// media querys////////// */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .section__form {
     form {
       display: flex;
@@ -244,7 +259,7 @@ a {
   }
 
   .img-little {
-    width: $width-total;
+    // width: $width-total;
     border-radius: 0;
   }
 }

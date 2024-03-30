@@ -31,12 +31,16 @@
     <title>Felicidades</title>
     <link rel="icon" href="./img/ico.ico" type="image/x-icon" />
   </head>
-  <body class="conteiner ps-0 pe-4">
+  <body
+    class="conteiner ps-0 pe-4 d-flex justify-content-between flex-column vh-100"
+  >
     <header class="d-flex mb-5 flex-column rounded-end-pill bg-light">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid justify-content-start">
           <div class="row">
-            <h1 class="col-12 fw-bold display-3">Hoostedate</h1>
+            <a href="./index.html">
+              <h1 class="col-12 fw-bold display-3">Hoostedate</h1></a
+            >
             <h2 class="col-12 display-5">El hostel que buscas esta aqui</h2>
             <p class="fs-4">
               Busca los hoteles mas destacados que la ciudad tiene para
@@ -54,8 +58,11 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0 pe-4">
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navbarSupportedContent"
+          >
+            <div class="navbar-nav mb-2 mb-lg-0 pe-4">
               <!-- Button trigger modal -->
               <button
                 class="d-inline-block m-2 display-6 nav-item d-flex justify-content-center no-btn"
@@ -310,10 +317,16 @@
         ></a>
       </div>
     </section>
-    <footer class="rounded-end-pill bg-light">
-      <i class="iconos fa-brands fa-facebook"></i>
-      <i class="iconos fa-brands fa-instagram"></i>
-      <i class="iconos fa-brands fa-x-twitter"></i>
+    <footer class="rounded-end-pill">
+      <a href="https://www.facebook.com/">
+        <i class="iconos fa-brands fa-facebook"></i
+      ></a>
+      <a href="https://www.instagram.com/">
+        <i class="iconos fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/">
+        <i class="iconos fa-brands fa-x-twitter"></i
+      ></a>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

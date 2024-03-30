@@ -16,9 +16,8 @@ body {
 body .section {
   width: 80%;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
@@ -42,7 +41,6 @@ body .section {
   background-size: 200% auto;
   color: #fff;
   border-radius: 10px;
-  border: 1px solid black;
   background-image: linear-gradient(to right, #1d6fa3 0%, #26d0ce 51%, #1d6fa3 100%);
 }
 
@@ -50,7 +48,6 @@ body .section {
   background-position: right center;
   color: #fff;
   text-decoration: none;
-  border: 1px solid black;
 }
 
 .card__img {
@@ -108,16 +105,30 @@ body .section {
 .images img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .color-modal {
-  background: linear-gradient(135deg, #2afadf 10%, #1d6fa3 100%);
+  background: #f7eedd;
 }
 .color-modal .btn-modal {
+  background: #2afadf;
+  color: black;
+}
+
+.form-datos input {
   background: #f7eedd;
+  font-weight: bold;
+}
+.form-datos input:focus {
+  background: #f7eedd;
+  border: none;
+  color: black;
 }
 
 footer {
+  background: rgba(255, 255, 255, 0.3);
   margin-top: 15px;
   width: 100%;
   height: 85px;
@@ -127,7 +138,7 @@ footer {
 }
 
 .iconos {
-  color: #2afadf;
+  color: white;
   text-align: center;
   font-size: 40px;
   display: inline-block;
@@ -190,9 +201,11 @@ a {
 }
 
 .img-little {
-  border-radius: 0 80px 80px 50px;
-  height: 40px;
-  width: 100px;
+  border-radius: 0 80px 80px 0;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .home {
@@ -201,8 +214,13 @@ a {
   bottom: 150px;
 }
 
+.badge {
+  background: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+
 /* /////////// media querys////////// */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .section__form form {
     display: flex;
     flex-direction: column;
@@ -236,7 +254,6 @@ a {
     border-bottom-left-radius: 5px;
   }
   .img-little {
-    width: 100%;
     border-radius: 0;
   }
 }/*# sourceMappingURL=style.css.map */
